@@ -5,8 +5,10 @@ function patientsController(req, res) {
 }
 
 function patientController(req, res) {
+    
     var patientId = req.params.id
-    var patient = patients[patientId]
+    console.log(patientId)
+    var patient = patients[patientId-1]
     res.json(patient)
 }
 
