@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
   res.status(200);
-  console.log("(Der Server funktioniert)")
+  console.log(" (Der Server funktioniert)")
 });
 
 router.get('/api',function(req,res,next){
